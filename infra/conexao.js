@@ -1,4 +1,4 @@
-const mysql  = require('mysql')
+import mysql from 'mysql'
 
 const conexao = mysql.createConnection({
     host: 'localhost',
@@ -6,6 +6,6 @@ const conexao = mysql.createConnection({
     user: 'root',
     password: 'admin',
     database: 'agenda-petshop'
-})
+});
 
-module.exports = conexao;
+export {conexao}
