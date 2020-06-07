@@ -1,7 +1,6 @@
 const customExpress = require('./config/customExpress');
-//const conexao = require('./infra/conexao')
+const conexao = require('./infra/conexao')
 const Tabelas = require('./infra/tabelas');
-import {conexao} from './infra/conexao';
 
 conexao.connect(erro => {
     if(erro){
